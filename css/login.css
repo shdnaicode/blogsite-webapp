@@ -1,0 +1,111 @@
+:root {
+  --form-border: 2px solid rgba(0, 0, 0, 0.2);
+  --form-border-radius: 5px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-contain {
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  height: 60%;
+  width: 25%;
+  border: var(--form-border);
+  border-radius: var(--form-border-radius);
+}
+
+.register-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-form {
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.label-username,
+.label-gmail,
+.label-password {
+  font-size: large;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.input-username,
+.input-gmail,
+.input-password {
+  width: 85%;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  border: var(--form-border);
+  border-radius: var(--form-border-radius);
+  padding-left: 10px;
+  background: transparent;
+  color: inherit;
+}
+
+.submit-button {
+  width: 89%;
+  height: 40px;
+  display: block;
+  margin: 30px auto 0;
+  border: var(--form-border);
+  font-weight: 600;
+  background-color: white;
+  border-radius: var(--form-border-radius);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.input-username:focus,
+.input-gmail:focus,
+.input-password:focus,
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.register-link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.register-path {
+  color: #a7e399;
+  text-decoration: none;
+}
+
+.divider {
+  border-top: var(--form-border);
+  display: block;
+  margin: 30px auto;
+  width: 85%;
+}
+
+.forgot-path {
+  text-align: right;
+  margin-left: 135px;
+  font-size: 16px;
+  color: #a7e399;
+  text-decoration: none;
+}
+
+.register-path:hover {
+  text-decoration: underline;
+}
